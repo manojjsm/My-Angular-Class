@@ -1,0 +1,12 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
