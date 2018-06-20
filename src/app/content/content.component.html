@@ -16,3 +16,12 @@
         <td>{{campList[1].reqDate.toLocaleDateString('en-GB')}}</td>
     </tr>
 </table>
+<p>Showing Camps in {{location}}</p>
+<label>Change Location</label>
+<input type="text" name='location' [(ngModel)]="location">
+
+<p>
+    <!--Button With Property Biding and Event Binding and interpolation-->
+    <button [ngClass]="{'btn':true,'btn-success':true}" (click)="showMore()" [innerText]="btnText"></button>
+</p>
+<p>{{info}}</p>
