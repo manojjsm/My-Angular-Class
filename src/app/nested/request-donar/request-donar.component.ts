@@ -16,6 +16,11 @@ export class RequestDonarComponent implements OnInit {
 
   onChange(val) {
 
+   if (val === undefined) {
+    this.willingDonars = ['Sorry No Donars -Try Again'];
+  } else {
     this.willingDonars = val;
+    }
+
   }
 }

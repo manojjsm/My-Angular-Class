@@ -10,7 +10,7 @@ export class ContentComponent implements OnInit {
   campList = [camp1, camp2, camp3];
   btnText = 'More';
   info: string;
-  location = 'Chennai';
+  location = '';
   canApply = false;
   constructor() { }
 

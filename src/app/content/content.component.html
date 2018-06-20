@@ -5,15 +5,10 @@
         <td>Location</td>
         <td>Date</td>
     </tr>
-    <tr>
-        <td>1</td>
-        <td>{{campList[0].location}}</td>
-        <td>{{campList[0].reqDate.toLocaleDateString('en-GB')}}</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>{{campList[1].location}}</td>
-        <td>{{campList[1].reqDate.toLocaleDateString('en-GB')}}</td>
+    <tr *ngFor="let eachCamp of campList  | filter:'location':location let idx=index">
+        <td>{{idx+1}}</td>
+        <td>{{eachCamp.location}}</td>
+        <td>{{eachCamp.reqDate |date}}</td>
     </tr>
 </table>
 <p>Showing Camps in {{location}}</p>

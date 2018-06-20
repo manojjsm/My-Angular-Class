@@ -4,7 +4,7 @@
 <table class="table table-bordered">
     <tr *ngFor="let eachDonar of donarList">
         <td>{{eachDonar.id}}</td>
-        <td>{{eachDonar.name}}</td>
+        <td>{{eachDonar.name | uppercase}}</td>
         <td><img src="assets/{{eachDonar.image}}" alt="Donar Image" class="img donar img-thumbnail"></td>
     </tr>
 </table>

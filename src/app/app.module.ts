@@ -12,6 +12,7 @@ import { DonarService } from './donar.service';
 import { ShowDonarComponent } from './show-donar/show-donar.component';
 import { RequestDonarComponent } from './nested/request-donar/request-donar.component';
 import { SendDonarComponent } from './nested/send-donar/send-donar.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,13 @@ import { SendDonarComponent } from './nested/send-donar/send-donar.component';
     ContentComponent,
     ShowDonarComponent,
     RequestDonarComponent,
-    SendDonarComponent
+    SendDonarComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule , HttpClientModule , FormsModule
   ],
   providers: [HttpClient, DonarService],
-  bootstrap: [RequestDonarComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
