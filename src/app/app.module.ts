@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { DonarService } from './donar.service';
 import { ShowDonarComponent } from './show-donar/show-donar.component';
+import { RequestDonarComponent } from './nested/request-donar/request-donar.component';
+import { SendDonarComponent } from './nested/send-donar/send-donar.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { ShowDonarComponent } from './show-donar/show-donar.component';
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    ShowDonarComponent
+    ShowDonarComponent,
+    RequestDonarComponent,
+    SendDonarComponent
   ],
   imports: [
     BrowserModule , HttpClientModule , FormsModule
   ],
   providers: [HttpClient, DonarService],
-  bootstrap: [AppComponent]
+  bootstrap: [RequestDonarComponent]
 })
 export class AppModule { }

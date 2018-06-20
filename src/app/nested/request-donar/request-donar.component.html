@@ -1,0 +1,9 @@
+<p>
+    request-donar works!
+</p>
+<input type='text' name='reqFrmPrnt' [(ngModel)]='reqFromParent'>
+
+<app-send-donar [requiredGroup]='reqFromParent' (availableDonars)="onChange($event)"></app-send-donar>
+<ol>
+    <li *ngFor='let eachDonar of willingDonars'>{{eachDonar}}</li>
+</ol>
